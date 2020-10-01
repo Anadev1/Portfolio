@@ -31,12 +31,9 @@ let repeatFunction = function (nr) {
      console.log("something");
 }
 
-// setInterval(plsWork(1), 20000);
-// setInterval(plsWork(2), 15000);
-// setInterval(plsWork(3), 10000);
-// setInterval(plsWork(4), 5000);
+let wow;
 
-let _mouse = false;
+let _mouse;
 
 function mouseStatus(status) {
      _mouse = status;
@@ -51,13 +48,7 @@ setTimeout(repeatFunction, 8000, 3);
 setTimeout(repeatFunction, 11500, 4);
 setTimeout(repeatFunction, 15000, 5);
 
-
-
-
-
-
-
-let wow = setInterval(() => {
+wow = setInterval(() => {
      setTimeout(repeatFunction, 1000, 1);
      setTimeout(repeatFunction, 4500, 2);
      setTimeout(repeatFunction, 8000, 3);
@@ -67,7 +58,36 @@ let wow = setInterval(() => {
 }, 18500);
 
 // function togglePhoto() {
+//      if (_mouse) {
+//           clearInterval(wow);
+//      } else {
+//           wow = setInterval(() => {
+//                setTimeout(repeatFunction, 1000, 1);
+//                setTimeout(repeatFunction, 4500, 2);
+//                setTimeout(repeatFunction, 8000, 3);
+//                setTimeout(repeatFunction, 11500, 4);
+//                setTimeout(repeatFunction, 15000, 5);
 
+//           }, 18500);
+//      }
 // }
 
 // togglePhoto();
+
+/* NAVIGATION */
+
+let shape = document.querySelector("#shape");
+let shape2 = document.querySelector("#shape2");
+
+window.addEventListener('scroll', function () {
+     let value = 50;
+     value = value - (window.scrollY / 10);
+     // console.log(value);
+     shape.style.clipPath = "polygon(0 50%, 0 100%, " + value + "% 100%)";
+})
+
+window.addEventListener('scroll', function () {
+     let value2 = window.scrollY;
+     console.log(value2);
+     shape2.style.clipPath = "polygon(0 0, 100% 0, 100 % " + value2 + "%, 0 %" + value2 + "%)";
+})
