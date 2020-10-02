@@ -1,5 +1,7 @@
 "use strict"
 
+/* FRONTPAGE PICTURE */
+
 function fadeOverlay(nr) {
      document.querySelector(`#purple-container-${nr}`).addEventListener("mouseover", function () {
           document.querySelector(`#purple-container-${nr}`).classList.add("showOverlay");
@@ -79,26 +81,35 @@ wow = setInterval(() => {
 let shape = document.querySelector("#shape");
 let shape2 = document.querySelector("#shape2");
 
+
 window.addEventListener('scroll', function () {
+
      let value = 50;
      value = value - (window.scrollY / 10);
      // console.log(value);
      shape.style.clipPath = `polygon(0 50%, 0 100%, ${value}% 100%)`;
+
+
 })
 
+
 window.addEventListener('scroll', function () {
-     let value2 = 50;
-     value2 = value2 - (window.scrollY / 10);
+     let value = 50;
+     value = value - (window.scrollY / 10);
      // console.log(value2);
-     console.log(window.scrollY);
-     shape2.style.clipPath = `polygon(0 ${value2}%, 100% ${value2}%, 100% 100%, 0% 100%)`;
+     // console.log(window.scrollY);
+     shape2.style.clipPath = `polygon(0 ${value}%, 100% ${value}%, 100% 100%, 0% 100%)`;
 })
 
 window.addEventListener('scroll', function () {
      if (window.scrollY > 190) {
           document.querySelector("#menu").classList.add("white");
+          document.querySelector("#about-line").style.backgroundColor = "#FAFAFA";
+          document.querySelector("#projects-line").style.backgroundColor = "#FAFAFA";
      } else {
           document.querySelector("#menu").classList.remove("white");
+          document.querySelector("#about-line").style.backgroundColor = "#333333";
+          document.querySelector("#projects-line").style.backgroundColor = "#333333";
      }
      if (window.scrollY >= 285) {
           document.querySelector("#logo").classList.add("whitelogo");
@@ -106,3 +117,40 @@ window.addEventListener('scroll', function () {
           document.querySelector("#logo").classList.remove("whitelogo");
      }
 })
+
+/* NAVIGATION MENU */
+
+let about = document.querySelector("#menu-about");
+let projects = document.querySelector("#menu-projects");
+let aboutPage = document.querySelector("#frontpage");
+let projectsPage = document.querySelector("#projects-container");
+let aboutLine = document.querySelector("#about-line");
+let projectsLine = document.querySelector("#projects-line");
+
+function elVisible(el) {
+     return (el.getBoundingClientRect().top + 250 >= 0 && (el.getBoundingClientRect().bottom) - 500 < window.innerHeight);
+}
+
+function aboutButton() {
+
+     if (elVisible(aboutPage)) {
+          aboutLine.style.display = "block";
+          about.style.transform = "translateX(20%)";
+     } else {
+          aboutLine.style.display = "none";
+          about.style.transform = "translateX(0)";
+     }
+}
+
+function projectsButton() {
+     if (elVisible(projectsPage)) {
+          projectsLine.style.opacity = "1";
+          projects.style.transform = "translateX(20%)";
+     } else {
+          projectsLine.style.opacity = "0";
+          projects.style.transform = "translateX(0)";
+     }
+}
+
+window.addEventListener('scroll', aboutButton);
+window.addEventListener('scroll', projectsButton);
