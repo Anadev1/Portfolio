@@ -89,6 +89,20 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function () {
      let value2 = 50;
      value2 = value2 - (window.scrollY / 10);
-     console.log(value2);
+     // console.log(value2);
+     console.log(window.scrollY);
      shape2.style.clipPath = `polygon(0 ${value2}%, 100% ${value2}%, 100% 100%, 0% 100%)`;
+})
+
+window.addEventListener('scroll', function () {
+     if (window.scrollY > 190) {
+          document.querySelector("#menu").classList.add("white");
+     } else {
+          document.querySelector("#menu").classList.remove("white");
+     }
+     if (window.scrollY >= 285) {
+          document.querySelector("#logo").classList.add("whitelogo");
+     } else {
+          document.querySelector("#logo").classList.remove("whitelogo");
+     }
 })

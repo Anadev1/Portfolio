@@ -22,6 +22,14 @@ body {
 
 }
 
+.white {
+     color: var(--white);
+}
+
+.whitelogo {
+     filter: invert(100%) sepia(7%) saturate(0%) hue-rotate(325deg) brightness(116%) contrast(96%);
+}
+
 h1 {
      font-family: 'Montserrat', sans-serif;
      font-weight: 700;
