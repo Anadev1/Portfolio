@@ -3,11 +3,11 @@
 function fadeOverlay(nr) {
      document.querySelector(`#purple-container-${nr}`).addEventListener("mouseover", function () {
           document.querySelector(`#purple-container-${nr}`).classList.add("showOverlay");
-          console.log("works");
+          // console.log("works");
      });
      document.querySelector(`#purple-container-${nr}`).addEventListener("mouseout", function () {
           document.querySelector(`#purple-container-${nr}`).classList.remove("showOverlay");
-          console.log("works again");
+          // console.log("works again");
      });
 }
 
@@ -28,7 +28,7 @@ function hideStuff(nr) {
 let repeatFunction = function (nr) {
      showStuff(nr);
      setTimeout(hideStuff, 3000, nr);
-     console.log("something");
+     // console.log("something");
 }
 
 let wow;
@@ -37,7 +37,7 @@ let _mouse;
 
 function mouseStatus(status) {
      _mouse = status;
-     console.log(_mouse);
+     // console.log(_mouse);
 }
 
 mouseStatus();
@@ -83,11 +83,12 @@ window.addEventListener('scroll', function () {
      let value = 50;
      value = value - (window.scrollY / 10);
      // console.log(value);
-     shape.style.clipPath = "polygon(0 50%, 0 100%, " + value + "% 100%)";
+     shape.style.clipPath = `polygon(0 50%, 0 100%, ${value}% 100%)`;
 })
 
 window.addEventListener('scroll', function () {
-     let value2 = window.scrollY;
+     let value2 = 50;
+     value2 = value2 - (window.scrollY / 10);
      console.log(value2);
-     shape2.style.clipPath = "polygon(0 0, 100% 0, 100 % " + value2 + "%, 0 %" + value2 + "%)";
+     shape2.style.clipPath = `polygon(0 ${value2}%, 100% ${value2}%, 100% 100%, 0% 100%)`;
 })

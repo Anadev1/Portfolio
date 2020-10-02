@@ -80,6 +80,10 @@ aside {
 }
 
 nav {
+     position: relative;
+}
+
+#menu {
      margin-bottom: 35vh;
 }
 
@@ -104,30 +108,20 @@ nav {
 #shape {
      background-color: var(--green);
      clip-path: polygon(0 50%, 0 100%, 0 100%);
-     /*clip-path: polygon(0 0, 15% 0, 15% 100%, 0% 100%); side rectangle */
      width: 100%;
      height: 100%;
      position: absolute;
      z-index: 0;
 }
 
-#shape {
-     background-color: var(--green);
-     clip-path: polygon(0 50%, 0 100%, 0 100%);
-     /*clip-path: polygon(0 0, 15% 0, 15% 100%, 0% 100%); side rectangle */
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     z-index: 0;
-}
 
 #shape2 {
      background-color: var(--green);
-     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
      width: 100%;
      height: 100%;
      position: absolute;
-     z-index: -0;
+     z-index: 0;
 }
 
 #contact-container {
