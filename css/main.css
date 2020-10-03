@@ -272,22 +272,25 @@ nav {
 /* PROJECTS SECTION */
 
 #projects-container {
-     height: 100vh;
-     margin-bottom: 10vh;
+     height: 80vh;
+     margin-bottom: 20vh;
      text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
 }
 
-#projects-page-title {
-     margin-top: 15%;
+#projects-container h1 {
+     font-size: 2.5vw;
 }
 
 .project-container {
      display: flex;
      flex-direction: row;
      width: 60vw;
-     height: 15vh;
-     margin: 7% auto;
-
+     justify-content: center;
+     margin-top: 5%;
 }
 
 .project-description {
@@ -307,6 +310,10 @@ nav {
      font-size: 1vw;
 }
 
+.project-image-container {
+     width: 20vw;
+}
+
 .project-image {
-     width: 80%;
+     max-width: 100%;
 }
