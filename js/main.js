@@ -3,11 +3,11 @@
 /* FRONTPAGE PICTURE */
 
 function fadeOverlay(nr) {
-     document.querySelector(`#purple-container-${nr}`).addEventListener("mouseover", function () {
+     document.querySelector(`#piece-${nr}`).addEventListener("mouseover", function () {
           document.querySelector(`#purple-container-${nr}`).classList.add("showOverlay");
           // console.log("works");
      });
-     document.querySelector(`#purple-container-${nr}`).addEventListener("mouseout", function () {
+     document.querySelector(`#piece-${nr}`).addEventListener("mouseout", function () {
           document.querySelector(`#purple-container-${nr}`).classList.remove("showOverlay");
           // console.log("works again");
      });
@@ -58,6 +58,8 @@ wow = setInterval(() => {
      setTimeout(repeatFunction, 15000, 5);
 
 }, 18500);
+
+// here I tried to make it stop when you hover on it but it doesn't woooooork :'(
 
 // function togglePhoto() {
 //      if (_mouse) {
