@@ -88,12 +88,11 @@ window.addEventListener('scroll', function () {
      value = value - (window.scrollY / 10);
      // console.log(value);
      shape.style.clipPath = `polygon(0 50%, 0 100%, ${value}% 100%)`;
-
-
 })
 
 
 window.addEventListener('scroll', function () {
+
      let value = 50;
      value = value - (window.scrollY / 10);
      // console.log(value2);
