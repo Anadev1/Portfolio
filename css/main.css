@@ -83,9 +83,10 @@ aside {
      justify-content: space-between;
      padding: 2vh 2vw;
      width: 15vw;
-     position: fixed;
-     left: 0;
+     position: sticky;
      top: 0;
+     left: 0;
+     bottom: 0;
      z-index: 1;
 }
 
@@ -284,7 +285,9 @@ nav {
      display: flex;
      flex-direction: row;
      width: 60vw;
+     height: 15vh;
      margin: 7% auto;
+
 }
 
 .project-description {
@@ -292,9 +295,18 @@ nav {
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     width: 50%;
 }
 
 .project-description h2 {
-     font-size: 3vw;
+     font-size: 2vw;
      margin-bottom: 5%;
+}
+
+.project-description h4 {
+     font-size: 1vw;
+}
+
+.project-image {
+     width: 80%;
 }
