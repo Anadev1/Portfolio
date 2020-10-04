@@ -17,12 +17,16 @@ a {
      color: inherit;
 }
 
+html {
+     scroll-behavior: smooth;
+}
+
 body {
      font-family: 'Montserrat', sans-serif;
      font-size: 1vw;
      color: var(--black);
-
 }
+
 
 .white {
      color: var(--white);
@@ -60,6 +64,7 @@ main {
 
 #logo {
      width: 10vw;
+     transition: all .3s;
 }
 
 .whitelogo {
@@ -75,6 +80,10 @@ main {
 }
 
 /* NAVIGATION */
+
+#project-list {
+     transition: all .3s;
+}
 
 aside {
      height: 100vh;
@@ -221,12 +230,6 @@ nav {
 .mozaic-photo {
      height: 90%;
 }
-
-/* @media only screen and (max-width: 1500px) {
-     #mozaic-container {
-          height: 500px;
-     }
-} */
 
 #purple-container-1 {
      width: 100%;

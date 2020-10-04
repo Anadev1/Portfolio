@@ -129,7 +129,7 @@ let aboutLine = document.querySelector("#about-line");
 let projectsLine = document.querySelector("#projects-line");
 
 function elVisible(el) {
-     return (el.getBoundingClientRect().top + 250 >= 0 && (el.getBoundingClientRect().bottom) - 500 < window.innerHeight);
+     return (el.getBoundingClientRect().top + 500 >= 0 && el.getBoundingClientRect().bottom - 500 < window.innerHeight);
 }
 
 function aboutButton() {
@@ -155,3 +155,16 @@ function projectsButton() {
 
 window.addEventListener('scroll', aboutButton);
 window.addEventListener('scroll', projectsButton);
+
+let projectList = document.querySelector("#project-list");
+
+function showProjectList() {
+     if (elVisible(projectsPage)) {
+          projectList.style.opacity = "1";
+          console.log("whwa");
+     } else {
+          projectList.style.opacity = "0";
+     }
+}
+
+window.addEventListener('scroll', showProjectList);

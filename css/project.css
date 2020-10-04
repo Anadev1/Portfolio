@@ -1,0 +1,36 @@
+#image-container {
+     width: 45vw;
+}
+
+/* .project-image {
+     width: 75%;
+} */
+
+#project-intro {
+     display: flex;
+     margin: 0 auto;
+}
+
+.description {
+     width: 40vw;
+     margin-left: 5%;
+     margin-top: 10%;
+     margin-right: -5%;
+}
+
+#description h1 {
+     margin-bottom: 1%;
+}
+
+#description p {
+     margin-bottom: 5%;
+}
+
+#project-process-1 {
+     display: flex;
+     width: 85vw;
+}
+
+#process-image-container-1 {
+     width: 40%;
+}
