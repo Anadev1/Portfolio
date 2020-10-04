@@ -83,6 +83,15 @@ main {
 
 #project-list {
      transition: all .3s;
+     opacity: 0;
+}
+
+#project-list h4 {
+     transition: all .3s;
+}
+
+#project-list h4:hover {
+     transform: translateX(1vw);
 }
 
 aside {

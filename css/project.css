@@ -2,35 +2,34 @@
      width: 45vw;
 }
 
-/* .project-image {
-     width: 75%;
-} */
+#project-main {
+     width: 84vw;
+     margin-left: 5%;
+}
 
 #project-intro {
      display: flex;
      margin: 0 auto;
+     text-align: center;
 }
 
 .description {
      width: 40vw;
-     margin-left: 5%;
      margin-top: 10%;
-     margin-right: -5%;
 }
 
-#description h1 {
+#project-intro h1 {
      margin-bottom: 1%;
 }
 
-#description p {
+#project-intro p {
      margin-bottom: 5%;
 }
 
-#project-process-1 {
+.project-process {
      display: flex;
-     width: 85vw;
 }
 
-#process-image-container-1 {
+.process-image-container {
      width: 40%;
 }
