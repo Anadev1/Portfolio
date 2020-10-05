@@ -95,7 +95,9 @@ window.addEventListener('load', function () {
 window.addEventListener('scroll', function () {
 
      let value = 50;
-     value = value - (window.scrollY / 10);
+     // let value2 = 50;
+     value = value - window.scrollY;
+     // value2 = value2 + (window.scrollY / 10);
      // console.log(value);
      shape.style.clipPath = `polygon(0 50%, 0 100%, ${value}% 100%)`;
 })
@@ -103,15 +105,15 @@ window.addEventListener('scroll', function () {
 
 window.addEventListener('scroll', function () {
 
-     let value = 50;
-     value = value - (window.scrollY / 10);
+     let value = 40;
+     value = value - (window.scrollY / 100);
      // console.log(value2);
-     // console.log(window.scrollY);
+     console.log(window.scrollY);
      shape2.style.clipPath = `polygon(0 ${value}%, 100% ${value}%, 100% 100%, 0% 100%)`;
 })
 
 window.addEventListener('scroll', function () {
-     if (window.scrollY > 190) {
+     if (window.scrollY > 496) {
           document.querySelector("#menu").classList.add("white");
           document.querySelector("#about-line").style.backgroundColor = "#FAFAFA";
           document.querySelector("#projects-line").style.backgroundColor = "#FAFAFA";
@@ -120,7 +122,7 @@ window.addEventListener('scroll', function () {
           document.querySelector("#about-line").style.backgroundColor = "#333333";
           document.querySelector("#projects-line").style.backgroundColor = "#333333";
      }
-     if (window.scrollY >= 285) {
+     if (window.scrollY > 675) {
           document.querySelector("#logo").classList.add("whitelogo");
      } else {
           document.querySelector("#logo").classList.remove("whitelogo");
