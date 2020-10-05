@@ -54,7 +54,7 @@ h5 {
      font-family: 'Montserrat',
           sans-serif;
      font-weight: 400;
-     font-size: 1vw;
+     font-size: .9vw;
 }
 
 main {
@@ -155,6 +155,24 @@ nav {
      transform: translateX(20%);
 }
 
+#contact-container {
+     z-index: 1;
+     color: var(--white);
+}
+
+#some-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 50%;
+}
+
+.some-icon {
+     font-size: 1.5vw;
+     margin-bottom: 1vh;
+     color: #FAFAFA;
+}
+
 /* FRONTPAGE STRUCTURE */
 
 #frontpage {
@@ -191,12 +209,7 @@ nav {
      z-index: 0;
 }
 
-#contact-container {
-     z-index: 1;
-     color: var(--white);
-}
-
-/* MOZAIC */
+/* FRONTPAGE PICTURE */
 
 #mozaic-container {
      display: flex;
