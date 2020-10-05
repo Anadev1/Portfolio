@@ -5,10 +5,12 @@
 function fadeOverlay(nr) {
      document.querySelector(`#piece-${nr}`).addEventListener("mouseover", function () {
           document.querySelector(`#purple-container-${nr}`).classList.add("showOverlay");
+          document.querySelector(`#info-${nr}`).style.display = "block";
           // console.log("works");
      });
      document.querySelector(`#piece-${nr}`).addEventListener("mouseout", function () {
           document.querySelector(`#purple-container-${nr}`).classList.remove("showOverlay");
+          document.querySelector(`#info-${nr}`).style.display = "none";
           // console.log("works again");
      });
 }
@@ -21,10 +23,12 @@ fadeOverlay(5);
 
 function showStuff(nr) {
      document.querySelector(`#purple-container-${nr}`).classList.add("showOverlay");
+     document.querySelector(`#info-${nr}`).style.display = "block";
 }
 
 function hideStuff(nr) {
      document.querySelector(`#purple-container-${nr}`).classList.remove("showOverlay");
+     document.querySelector(`#info-${nr}`).style.display = "none";
 }
 
 let repeatFunction = function (nr) {
@@ -59,7 +63,7 @@ wow = setInterval(() => {
 
 }, 18500);
 
-// here I tried to make it stop when you hover on it but it doesn't woooooork :'(
+// here I tried to make it stop when you hover on it but it doesn't work :'(
 
 // function togglePhoto() {
 //      if (_mouse) {

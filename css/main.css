@@ -293,6 +293,41 @@ nav {
      opacity: 0.65;
 }
 
+#info-1 {
+     color: #FAFAFA;
+     transition: all 0.5s;
+     display: none;
+}
+
+#info-2 {
+     color: #FAFAFA;
+     transition: all 0.5s;
+     display: none;
+}
+
+#info-3 {
+     color: #FAFAFA;
+     transition: all 0.5s;
+     display: none;
+}
+
+#info-4 {
+     color: #FAFAFA;
+     transition: all 0.5s;
+     display: none;
+}
+
+#info-5 {
+     color: #FAFAFA;
+     transition: all 0.5s;
+     display: none;
+}
+
+.showText {
+     display: block;
+}
+
+
 /* PROJECTS SECTION */
 
 #projects-container {
