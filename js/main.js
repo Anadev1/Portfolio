@@ -83,6 +83,10 @@ wow = setInterval(() => {
 let shape = document.querySelector("#shape");
 let shape2 = document.querySelector("#shape2");
 
+window.addEventListener('load', function () {
+
+     shape.style.clipPath = `polygon(0 50%, 0 100%, 50% 100%)`;
+})
 
 window.addEventListener('scroll', function () {
 

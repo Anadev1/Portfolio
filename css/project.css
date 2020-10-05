@@ -3,7 +3,7 @@
 }
 
 #project-main {
-     width: 84vw;
+     width: 75vw;
      margin-left: 5%;
 }
 
@@ -32,4 +32,8 @@
 
 .process-image-container {
      width: 40%;
+}
+
+.description:nth-child(even) {
+     margin-left: 5%;
 }
