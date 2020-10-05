@@ -140,7 +140,6 @@ nav {
 #menu-about {
      transition: transform .3s ease-in;
      text-decoration: none;
-     transform: translateX(20%);
 }
 
 #menu-about:hover {

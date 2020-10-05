@@ -2,9 +2,14 @@
      width: 45vw;
 }
 
+#kp-project-image {
+     margin-top: 15%;
+     width: 80%;
+}
+
 #project-main {
      width: 75vw;
-     margin-left: 5%;
+     margin-left: 8.5%;
 }
 
 #project-intro {
@@ -28,6 +33,7 @@
 
 .project-process {
      display: flex;
+     margin-top: 10%;
 }
 
 .process-image-container {
@@ -36,4 +42,13 @@
 
 .description:nth-child(even) {
      margin-left: 5%;
+}
+
+#shape {
+     background-color: var(--green);
+     clip-path: polygon(0 50%, 0 50%, 0 100%);
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     z-index: 0;
 }

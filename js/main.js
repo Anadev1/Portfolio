@@ -132,6 +132,11 @@ let projectsPage = document.querySelector("#projects-container");
 let aboutLine = document.querySelector("#about-line");
 let projectsLine = document.querySelector("#projects-line");
 
+window.addEventListener('load', function () {
+
+     about.style.transform = "translateX(20%)";
+})
+
 function elVisible(el) {
      return (el.getBoundingClientRect().top + 500 >= 0 && el.getBoundingClientRect().bottom - 500 < window.innerHeight);
 }
