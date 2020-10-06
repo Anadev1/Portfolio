@@ -25,6 +25,7 @@ body {
      font-family: 'Montserrat', sans-serif;
      font-size: 1vw;
      color: var(--black);
+     background-color: var(--white);
 }
 
 
@@ -164,7 +165,7 @@ nav {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     width: 50%;
+     width: 65%;
 }
 
 .some-icon {
@@ -381,6 +382,11 @@ nav {
      width: 60vw;
      justify-content: center;
      margin-top: 5%;
+     transition: all .5s;
+}
+
+.project-container:hover {
+     margin-left: 5%;
 }
 
 .project-description {
