@@ -214,6 +214,7 @@ nav {
 #mozaic-container {
      display: flex;
      flex-direction: row;
+     margin-top: 3%;
 }
 
 #mozaic-container-left {
@@ -354,6 +355,10 @@ nav {
 
 
 /* PROJECTS SECTION */
+
+#projects-page-title {
+     margin-top: 3%;
+}
 
 #projects-container {
      height: 125vh;
