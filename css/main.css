@@ -257,6 +257,9 @@ nav {
      height: 90%;
      margin-top: -131.5%;
      transition: all 0.5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
 #purple-container-2 {
@@ -264,6 +267,9 @@ nav {
      height: 90%;
      margin-top: -131.5%;
      transition: all 0.5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
 #purple-container-3 {
@@ -271,6 +277,9 @@ nav {
      height: 90%;
      margin-top: -88.5%;
      transition: all 0.5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
 #purple-container-4 {
@@ -278,6 +287,9 @@ nav {
      height: 90%;
      margin-top: -88.5%;
      transition: all 0.5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
 #purple-container-5 {
@@ -285,6 +297,9 @@ nav {
      height: 90%;
      margin-top: -88.5%;
      transition: all 0.5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
 .showOverlay {
@@ -293,34 +308,44 @@ nav {
      opacity: 0.65;
 }
 
+#mozaic-container h4 {
+     font-size: 1vw;
+}
+
 #info-1 {
      color: #FAFAFA;
      transition: all 0.5s;
      display: none;
+     text-align: center;
 }
 
 #info-2 {
      color: #FAFAFA;
      transition: all 0.5s;
      display: none;
+     text-align: center;
 }
 
 #info-3 {
      color: #FAFAFA;
      transition: all 0.5s;
      display: none;
+     text-align: center;
+
 }
 
 #info-4 {
      color: #FAFAFA;
      transition: all 0.5s;
      display: none;
+     text-align: center;
 }
 
 #info-5 {
      color: #FAFAFA;
      transition: all 0.5s;
      display: none;
+     text-align: center;
 }
 
 .showText {
