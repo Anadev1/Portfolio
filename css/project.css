@@ -3,8 +3,8 @@
 }
 
 #kp-project-image {
-     margin-top: 15%;
-     width: 80%;
+     margin-top: 25%;
+     width: 90%;
 }
 
 #project-main {
@@ -16,7 +16,15 @@
 #project-intro {
      display: flex;
      margin: 0 auto;
+     margin-top: 5%;
      text-align: center;
+}
+
+#project-intro .description {
+     width: 40vw;
+     margin-top: 10%;
+     align-items: center;
+     margin-left: 10%;
 }
 
 .project-process .description {
