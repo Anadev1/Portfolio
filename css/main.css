@@ -94,6 +94,7 @@ main {
 
 #project-list h4 {
      transition: all .3s;
+     margin-top: 2%;
 }
 
 #project-list h4:hover {
@@ -391,7 +392,7 @@ nav {
 }
 
 .project-container:hover {
-     margin-left: 5%;
+     transform: translateX(3%);
 }
 
 .project-description {

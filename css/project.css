@@ -91,9 +91,10 @@
      transition: all .5s;
      width: 10vw;
      font-weight: bold;
+     color: #32A8A6;
 }
 
 #project-buttons h4:hover {
-     color: #32A8A6;
-     margin-left: 5%;
+     color: #A8326F;
+     transform: translateX(5%);
 }
