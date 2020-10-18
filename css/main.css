@@ -115,25 +115,31 @@ aside {
      z-index: 1;
 }
 
-#topnav {
-     display: none;
-}
-
 /* Style the navigation menu */
 .topnav {
      overflow: hidden;
-     background-color: #333;
+     background-color: var(--white);
      position: relative;
+     display: none;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
      display: none;
+     text-align: center;
+     background-color: var(--green);
+
+     z-index: 10;
+}
+
+#myLinks a {
+     color: var(--white);
+     font-size: 5vw;
 }
 
 /* Style navigation menu links */
 .topnav a {
-     color: white;
+     color: var(--black);
      padding: 14px 16px;
      text-decoration: none;
      font-size: 17px;
@@ -142,24 +148,14 @@ aside {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-     background: black;
+     background: var(--white);
      display: block;
      position: absolute;
      right: 0;
      top: 0;
+     font-size: 7.5vw;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-     background-color: #ddd;
-     color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-     background-color: #4CAF50;
-     color: white;
-}
 
 nav {
      position: relative;
@@ -467,10 +463,9 @@ nav {
 }
 
 @media only screen and (max-width: 450px) {
-     #topnav {
+     .topnav {
           display: block;
           z-index: 10;
-          position: absolute;
      }
 
      #frontpage {
@@ -533,5 +528,9 @@ nav {
 
      .project-image {
           max-width: 100%;
+     }
+
+     #logo-mobile {
+          width: 20vw;
      }
 }
